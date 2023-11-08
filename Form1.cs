@@ -17,6 +17,8 @@ namespace AT3SprintOne
             InitializeComponent();
         }
 
+        int[] neutrinosArray = new int[24];
+
         private void sortBtn_Click(object sender, EventArgs e)
         {
 
