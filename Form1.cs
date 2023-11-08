@@ -17,5 +17,9 @@ namespace AT3SprintOne
             InitializeComponent();
         }
 
+        private void sortBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
