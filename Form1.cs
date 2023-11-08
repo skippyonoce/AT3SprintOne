@@ -17,12 +17,5 @@ namespace AT3SprintOne
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Hello
-            //World
-            //2
-            //KYLE!
-        }
     }
 }
