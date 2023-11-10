@@ -50,6 +50,7 @@ namespace AT3SprintOne
                 }
             }
             bs.ResetBindings(false);
+            Status.Text = "Neutrino data sorted in ascending order.";
         }
 
         private void generateBtn_Click(object sender, EventArgs e)
