@@ -117,7 +117,7 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
+            this.Status});
             this.statusStrip1.Location = new System.Drawing.Point(0, 460);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
@@ -133,9 +133,9 @@
             // 
             // Status
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(106, 17);
-            this.toolStripStatusLabel2.Text = "Program Initialized";
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(106, 17);
+            this.Status.Text = "Program Initialized";
             // 
             // label2
             // 
