@@ -27,7 +27,10 @@ namespace AT3SprintOne
         private void binarySearchBtn_Click(object sender, EventArgs e)
         {
             int search = validIntInput();
-            
+            sortNeutrinos();
+            List<int> neutrinos = neutrinosArray.ToList();
+            int idx = neutrinos.BinarySearch(search);
+            listBox1.SetSelected(idx, true);
         }
 
         private int validIntInput()
