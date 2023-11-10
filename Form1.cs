@@ -60,6 +60,7 @@ namespace AT3SprintOne
                 neutrinosArray[i] = rand.Next(11, 99);
             }
             bs.ResetBindings(false);
+            Status.Text = "New data generated.";
         }
         private void binarySearchBtn_Click(object sender, EventArgs e)
         {
