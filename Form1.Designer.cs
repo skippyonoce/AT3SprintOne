@@ -101,6 +101,7 @@
             this.binarySearchBtn.TabIndex = 6;
             this.binarySearchBtn.Text = "SEARCH";
             this.binarySearchBtn.UseVisualStyleBackColor = true;
+            this.binarySearchBtn.Click += new System.EventHandler(this.binarySearchBtn_Click);
             // 
             // statusStrip1
             // 
