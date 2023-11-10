@@ -91,7 +91,7 @@ namespace AT3SprintOne
             }
             else
             {
-                Status.Text = "Error: Input is not a valid integer.";
+                Status.Text = "Error: "+textBox1.Text+" is not a valid integer.";
                 throw new InvalidDataException("Input is not a valid integer.");
             }
 
