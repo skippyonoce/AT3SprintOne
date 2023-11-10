@@ -45,7 +45,7 @@ namespace AT3SprintOne
 
         private void generateBtn_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < neutrinosArray.Length - 1; i++)
+            for (int i = 0; i < neutrinosArray.Length; i++)
             {
                 neutrinosArray[i] = rand.Next(100);
             }
