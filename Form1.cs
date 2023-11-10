@@ -102,5 +102,17 @@ namespace AT3SprintOne
         {
             textBox1.Text = listBox1.SelectedItem.ToString();
         }
+
+        private void editBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int value = validIntInput();
+                int preValue = neutrinosArray[listBox1.SelectedIndex];
+                neutrinosArray[listBox1.SelectedIndex] = value;
+                Status.Text = "'"+preValue+"' changed to '"+value+"'";
+            }
+            catch(InvalidDataException e1) { }
+        }
     }
 }

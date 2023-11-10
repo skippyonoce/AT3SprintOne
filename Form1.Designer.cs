@@ -94,6 +94,7 @@
             this.editBtn.TabIndex = 6;
             this.editBtn.Text = "EDIT";
             this.editBtn.UseVisualStyleBackColor = true;
+            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
             // binarySearchBtn
             // 
