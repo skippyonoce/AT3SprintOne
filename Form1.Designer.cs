@@ -45,16 +45,19 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 53);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(16, 65);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(127, 368);
+            this.listBox1.Size = new System.Drawing.Size(168, 452);
             this.listBox1.TabIndex = 2;
             // 
             // sortBtn
             // 
-            this.sortBtn.Location = new System.Drawing.Point(12, 12);
+            this.sortBtn.Location = new System.Drawing.Point(16, 15);
+            this.sortBtn.Margin = new System.Windows.Forms.Padding(4);
             this.sortBtn.Name = "sortBtn";
-            this.sortBtn.Size = new System.Drawing.Size(127, 25);
+            this.sortBtn.Size = new System.Drawing.Size(169, 31);
             this.sortBtn.TabIndex = 3;
             this.sortBtn.Text = "SORT";
             this.sortBtn.UseVisualStyleBackColor = true;
@@ -62,83 +65,92 @@
             // 
             // generateBtn
             // 
-            this.generateBtn.Location = new System.Drawing.Point(12, 427);
+            this.generateBtn.Location = new System.Drawing.Point(16, 526);
+            this.generateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.generateBtn.Name = "generateBtn";
-            this.generateBtn.Size = new System.Drawing.Size(127, 30);
+            this.generateBtn.Size = new System.Drawing.Size(169, 37);
             this.generateBtn.TabIndex = 4;
             this.generateBtn.Text = "GENERATE";
             this.generateBtn.UseVisualStyleBackColor = true;
+            this.generateBtn.Click += new System.EventHandler(this.generateBtn_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 70);
+            this.textBox1.Location = new System.Drawing.Point(243, 86);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
+            this.textBox1.Size = new System.Drawing.Size(231, 22);
             this.textBox1.TabIndex = 5;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(179, 54);
+            this.label1.Location = new System.Drawing.Point(239, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Input:";
             // 
             // editBtn
             // 
-            this.editBtn.Location = new System.Drawing.Point(182, 96);
+            this.editBtn.Location = new System.Drawing.Point(243, 118);
+            this.editBtn.Margin = new System.Windows.Forms.Padding(4);
             this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(75, 23);
+            this.editBtn.Size = new System.Drawing.Size(100, 28);
             this.editBtn.TabIndex = 6;
             this.editBtn.Text = "EDIT";
             this.editBtn.UseVisualStyleBackColor = true;
             // 
             // binarySearchBtn
             // 
-            this.binarySearchBtn.Location = new System.Drawing.Point(281, 96);
+            this.binarySearchBtn.Location = new System.Drawing.Point(375, 118);
+            this.binarySearchBtn.Margin = new System.Windows.Forms.Padding(4);
             this.binarySearchBtn.Name = "binarySearchBtn";
-            this.binarySearchBtn.Size = new System.Drawing.Size(75, 23);
+            this.binarySearchBtn.Size = new System.Drawing.Size(100, 28);
             this.binarySearchBtn.TabIndex = 6;
             this.binarySearchBtn.Text = "SEARCH";
             this.binarySearchBtn.UseVisualStyleBackColor = true;
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 460);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 567);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(374, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(499, 26);
             this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(45, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(56, 20);
             this.toolStripStatusLabel1.Text = "Status: ";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(106, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(135, 20);
             this.toolStripStatusLabel2.Text = "Program Initialized";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 40);
+            this.label2.Location = new System.Drawing.Point(12, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(106, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Hourly Neutrinos";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 482);
+            this.ClientSize = new System.Drawing.Size(499, 593);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.binarySearchBtn);
@@ -148,6 +160,7 @@
             this.Controls.Add(this.generateBtn);
             this.Controls.Add(this.sortBtn);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Astronomical Processing";
             this.statusStrip1.ResumeLayout(false);
