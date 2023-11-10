@@ -65,7 +65,15 @@ namespace AT3SprintOne
             sortNeutrinos();
             List<int> neutrinos = neutrinosArray.ToList();
             int idx = neutrinos.BinarySearch(search);
-            listBox1.SetSelected(idx, true);
+            if (idx > 0)
+            {
+                listBox1.SetSelected(idx, true);
+            }
+            else
+            {
+                listBox1.ClearSelected();
+                Status.Text = "'" + search + "' was not be found.";
+            }
         }
 
         private int validIntInput()
