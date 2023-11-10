@@ -48,6 +48,7 @@ namespace AT3SprintOne
                     }
                 }
             }
+            bs.ResetBindings(false);
         }
 
         private void generateBtn_Click(object sender, EventArgs e)
