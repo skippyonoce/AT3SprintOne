@@ -54,7 +54,7 @@ namespace AT3SprintOne
         {
             for (int i = 0; i < neutrinosArray.Length; i++)
             {
-                neutrinosArray[i] = rand.Next(100);
+                neutrinosArray[i] = rand.Next(11, 99);
             }
             bs.ResetBindings(false);
         }
