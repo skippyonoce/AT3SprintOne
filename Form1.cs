@@ -97,5 +97,10 @@ namespace AT3SprintOne
 
             return validInt;
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = listBox1.SelectedItem.ToString();
+        }
     }
 }
