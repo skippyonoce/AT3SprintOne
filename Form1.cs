@@ -30,5 +30,18 @@ namespace AT3SprintOne
             
         }
 
+        private int validIntInput()
+        {
+            int validInt;
+            if (int.TryParse(textBox1.Text, out validInt)){
+                //validInt = int.Parse(textBox1.Text);
+            }
+            else{
+                Status.Text = "Error: Input is not a valid integer.";
+            }           
+            
+            return validInt;
+        }
+
     }
 }
