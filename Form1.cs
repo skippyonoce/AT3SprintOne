@@ -59,6 +59,25 @@ namespace AT3SprintOne
             }
             bs.ResetBindings(false);
         }
+        private void binarySearchBtn_Click(object sender, EventArgs e)
+        {
+            int search = int.Parse(textBox1.Text);
 
+        }
+
+        private int validIntInput()
+        {
+            int validInt;
+            if (int.TryParse(textBox1.Text, out validInt))
+            {
+                //validInt = int.Parse(textBox1.Text);
+            }
+            else
+            {
+                Status.Text = "Error: Input is not a valid integer.";
+            }
+
+            return validInt;
+        }
     }
 }

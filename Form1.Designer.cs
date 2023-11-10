@@ -37,7 +37,7 @@
             this.binarySearchBtn = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Status = new System.Windows.Forms.ToolStripStatusLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -110,6 +110,7 @@
             this.binarySearchBtn.TabIndex = 6;
             this.binarySearchBtn.Text = "SEARCH";
             this.binarySearchBtn.UseVisualStyleBackColor = true;
+            this.binarySearchBtn.Click += new System.EventHandler(this.binarySearchBtn_Click);
             // 
             // statusStrip1
             // 
@@ -117,7 +118,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 567);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 460);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
             this.statusStrip1.Size = new System.Drawing.Size(499, 26);
@@ -130,10 +131,10 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(56, 20);
             this.toolStripStatusLabel1.Text = "Status: ";
             // 
-            // toolStripStatusLabel2
+            // Status
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(135, 20);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(106, 17);
             this.toolStripStatusLabel2.Text = "Program Initialized";
             // 
             // label2
@@ -180,7 +181,7 @@
         private System.Windows.Forms.Button binarySearchBtn;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel Status;
         private System.Windows.Forms.Label label2;
     }
 }
