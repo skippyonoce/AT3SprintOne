@@ -60,5 +60,18 @@ namespace AT3SprintOne
             bs.ResetBindings(false);
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = listBox1.Text;
+        }
+
+        private void editBtn_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItems.Count == 1 && int.TryParse(textBox1.Text, out int newValue))
+            {
+                neutrinosArray[listBox1.SelectedIndex] = newValue;
+            }
+            bs.ResetBindings(false);
+        }
     }
 }
