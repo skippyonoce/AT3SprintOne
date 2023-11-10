@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -61,20 +62,24 @@ namespace AT3SprintOne
         }
         private void binarySearchBtn_Click(object sender, EventArgs e)
         {
-            int search = validIntInput();
-            sortNeutrinos();
-            List<int> neutrinos = neutrinosArray.ToList();
-            int idx = neutrinos.BinarySearch(search);
-            if (idx > 0)
+            try
             {
-                listBox1.SetSelected(idx, true);
-                Status.Text = "'" + search + "' was found and highlighted.";
+                int search = validIntInput();
+                sortNeutrinos();
+                List<int> neutrinos = neutrinosArray.ToList();
+                int idx = neutrinos.BinarySearch(search);
+                if (idx > 0)
+                {
+                    listBox1.SetSelected(idx, true);
+                    Status.Text = "'" + search + "' was found and highlighted.";
+                }
+                else
+                {
+                    listBox1.ClearSelected();
+                    Status.Text = "'" + search + "' was not be found.";
+                }
             }
-            else
-            {
-                listBox1.ClearSelected();
-                Status.Text = "'" + search + "' was not be found.";
-            }
+            catch(InvalidDataException e1) { }
         }
 
         private int validIntInput()
@@ -87,6 +92,7 @@ namespace AT3SprintOne
             else
             {
                 Status.Text = "Error: Input is not a valid integer.";
+                throw new InvalidDataException("Input is not a valid integer.");
             }
 
             return validInt;
