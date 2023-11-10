@@ -111,6 +111,7 @@ namespace AT3SprintOne
                 int preValue = neutrinosArray[listBox1.SelectedIndex];
                 neutrinosArray[listBox1.SelectedIndex] = value;
                 Status.Text = "'"+preValue+"' changed to '"+value+"'";
+                bs.ResetBindings(false);
             }
             catch(InvalidDataException e1) { }
         }
