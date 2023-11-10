@@ -21,7 +21,19 @@ namespace AT3SprintOne
 
         private void sortBtn_Click(object sender, EventArgs e)
         {
-
+            int temp;
+            bool sorted = false;
+            while (!sorted){
+                sorted = true;
+                for (int i = 0; i < neutrinosArray.Length - 1; i++){
+                    if (neutrinosArray[i] > neutrinosArray[i + 1]){
+                        sorted = false;
+                        temp = neutrinosArray[i + 1];
+                        neutrinosArray[i + 1] = neutrinosArray[i];
+                        neutrinosArray[i] = temp;
+                    }
+                }
+            }
         }
     }
 }
