@@ -73,7 +73,7 @@ namespace AT3SprintOne
                 if (idx >= 0)
                 {
                     listBox1.SetSelected(idx, true);
-                    Status.Text = "'" + search + "' was found and highlighted.";
+                    Status.Text = "'" + search + "' was found and highlighted. [Index:"+idx+"]";
                 }
                 else
                 {
