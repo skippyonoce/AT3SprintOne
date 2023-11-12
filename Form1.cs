@@ -70,7 +70,7 @@ namespace AT3SprintOne
                 sortNeutrinos();
                 List<int> neutrinos = neutrinosArray.ToList();
                 int idx = neutrinos.BinarySearch(search);
-                if (idx > 0)
+                if (idx >= 0)
                 {
                     listBox1.SetSelected(idx, true);
                     Status.Text = "'" + search + "' was found and highlighted.";
