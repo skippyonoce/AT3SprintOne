@@ -143,7 +143,10 @@ namespace AT3SprintOne
          */
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.Text = listBox1.SelectedItem.ToString();
+            if (listBox1.SelectedItem != null)
+            {
+                textBox1.Text = listBox1.SelectedItem.ToString();
+            }
         }
         /*
          * This function validates the contents of the GUI's textbox using the validIntInput().
