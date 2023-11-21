@@ -91,7 +91,11 @@ namespace AT3SprintOne
             bs.ResetBindings(false);
             Status.Text = "New data generated.";
         }
-
+        /*
+         * This function uses a binary search algorithm to search for the same value, typed into the input textbox of the GUI,
+         * in the neutrinosArray. It validates the input textbox before performing the search.
+         * and Updates the status bar as to whether the search was successful or not.
+         */
         private void binarySearchBtn_Click(object sender, EventArgs e)
         {
             try
