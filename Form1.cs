@@ -42,11 +42,19 @@ namespace AT3SprintOne
             listBox1.DataSource = bs;
             rand = new Random();
         }
-
+        /* 
+         * When the Sort button is pressed this function calls the sortNeutrinos() function.
+         */
         private void sortBtn_Click(object sender, EventArgs e)
         {
             sortNeutrinos();
         }
+        /*
+         * This function uses a bubble sort algorithm to sort the 
+         * neutrinosArray (neutrino data set) into ascending order.
+         * And then refreshes the GUI's viewList (of the neutrinosArray) 
+         * and Updates the status bar.
+         */
         private void sortNeutrinos()
         {
             int temp;
@@ -68,7 +76,12 @@ namespace AT3SprintOne
             bs.ResetBindings(false);
             Status.Text = "Neutrino data sorted in ascending order.";
         }
-
+        /*
+         * This function itteratively generates random neutrino radiation readings for
+         * the neutrinosArray. All values being within the range of 10-99.
+         * And then refreshes the GUI's viewList (of the neutrinosArray) 
+         * and Updates the status bar.
+         */
         private void generateBtn_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < neutrinosArray.Length; i++)
@@ -78,6 +91,7 @@ namespace AT3SprintOne
             bs.ResetBindings(false);
             Status.Text = "New data generated.";
         }
+
         private void binarySearchBtn_Click(object sender, EventArgs e)
         {
             try
