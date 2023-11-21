@@ -117,7 +117,11 @@ namespace AT3SprintOne
             }
             catch(InvalidDataException e1) { }
         }
-
+        /*
+         * This function validates the contents of the GUI's textbox. (Whether the contents is an integer).
+         * and Updates the status bar as to whether the validation was successful or not.
+         * If unsuccessful, the function will also throw an InvalidDataException.
+         */
         private int validIntInput()
         {
             int validInt;
