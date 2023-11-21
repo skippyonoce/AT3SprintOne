@@ -10,6 +10,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// De Jean Felix and Kyle Haddleton, Team: Digi-wise, Sprint Number 1
+// Date: 13/11/2023
+// Version: 1.0
+// Astronomical Processing
+// This program simulates reading in neutrino radiation readings and
+// is able to sort the data set and search for specific data points.
+// It is also able to edit specific data points.
+//Inputs for this program are click-based, and typed into a GUI.
+
+//Processes are as described above. To be more specific:
+//The search function for this program is using a Binary Search algorithm.
+//The sorting function is using a Bubble Sort algorithm.
+//The data generation function uses an iterative algorithm.
+
+//All relavent outputs are displayed on the programs GUI.
+
 namespace AT3SprintOne
 {
     public partial class Form1 : Form
