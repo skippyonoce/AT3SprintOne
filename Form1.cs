@@ -31,9 +31,9 @@ namespace AT3SprintOne
     public partial class Form1 : Form
     {
 
-        Random rand;
-        int[] neutrinosArray = new int[24];
-        BindingSource bs = new BindingSource();
+        Random rand; //for randomly generating numbers
+        int[] neutrinosArray = new int[24]; //For storing hourly (for 24 hours) of neutrino radiation data.
+        BindingSource bs = new BindingSource(); //For GUI's viewList pre-coded functionalities.
 
         public Form1()
         {
