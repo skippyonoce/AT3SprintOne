@@ -137,12 +137,20 @@ namespace AT3SprintOne
 
             return validInt;
         }
-
+        /*
+         * This function auto fills (matching with selection) the GUI's input textbox, 
+         * whenever a new item/value is selected in the GUI's viewlist. 
+         */
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox1.Text = listBox1.SelectedItem.ToString();
         }
-
+        /*
+         * This function validates the contents of the GUI's textbox using the validIntInput().
+         * It does nothing (simply catches the InvalidDataException) if the validation fails.
+         * Otherwise, it sets selected items value in the viewlist 
+         * (same index for neutrinosArray), as the same value shown in the input textbox.
+         */
         private void editBtn_Click(object sender, EventArgs e)
         {
             try
