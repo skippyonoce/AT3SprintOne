@@ -39,6 +39,14 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.Status = new System.Windows.Forms.ToolStripStatusLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.MidExBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ModeBtn = new System.Windows.Forms.Button();
+            this.AverageBtn = new System.Windows.Forms.Button();
+            this.RangeBtn = new System.Windows.Forms.Button();
+            this.statsBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SeqSearchBtn = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,9 +96,9 @@
             // 
             // editBtn
             // 
-            this.editBtn.Location = new System.Drawing.Point(182, 96);
+            this.editBtn.Location = new System.Drawing.Point(310, 41);
             this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(75, 23);
+            this.editBtn.Size = new System.Drawing.Size(46, 23);
             this.editBtn.TabIndex = 6;
             this.editBtn.Text = "EDIT";
             this.editBtn.UseVisualStyleBackColor = true;
@@ -98,11 +106,11 @@
             // 
             // binarySearchBtn
             // 
-            this.binarySearchBtn.Location = new System.Drawing.Point(281, 96);
+            this.binarySearchBtn.Location = new System.Drawing.Point(201, 93);
             this.binarySearchBtn.Name = "binarySearchBtn";
-            this.binarySearchBtn.Size = new System.Drawing.Size(75, 23);
+            this.binarySearchBtn.Size = new System.Drawing.Size(133, 23);
             this.binarySearchBtn.TabIndex = 6;
-            this.binarySearchBtn.Text = "SEARCH";
+            this.binarySearchBtn.Text = "BINARY SEARCH";
             this.binarySearchBtn.UseVisualStyleBackColor = true;
             this.binarySearchBtn.Click += new System.EventHandler(this.binarySearchBtn_Click);
             // 
@@ -139,13 +147,93 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Hourly Neutrinos";
             // 
+            // MidExBtn
+            // 
+            this.MidExBtn.Location = new System.Drawing.Point(182, 255);
+            this.MidExBtn.Name = "MidExBtn";
+            this.MidExBtn.Size = new System.Drawing.Size(75, 23);
+            this.MidExBtn.TabIndex = 9;
+            this.MidExBtn.Text = "Mid-Extreme";
+            this.MidExBtn.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(182, 242);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Statistics";
+            // 
+            // ModeBtn
+            // 
+            this.ModeBtn.Location = new System.Drawing.Point(182, 276);
+            this.ModeBtn.Name = "ModeBtn";
+            this.ModeBtn.Size = new System.Drawing.Size(75, 23);
+            this.ModeBtn.TabIndex = 9;
+            this.ModeBtn.Text = "Mode";
+            this.ModeBtn.UseVisualStyleBackColor = true;
+            // 
+            // AverageBtn
+            // 
+            this.AverageBtn.Location = new System.Drawing.Point(182, 296);
+            this.AverageBtn.Name = "AverageBtn";
+            this.AverageBtn.Size = new System.Drawing.Size(75, 23);
+            this.AverageBtn.TabIndex = 9;
+            this.AverageBtn.Text = "Average";
+            this.AverageBtn.UseVisualStyleBackColor = true;
+            // 
+            // RangeBtn
+            // 
+            this.RangeBtn.Location = new System.Drawing.Point(182, 316);
+            this.RangeBtn.Name = "RangeBtn";
+            this.RangeBtn.Size = new System.Drawing.Size(75, 23);
+            this.RangeBtn.TabIndex = 9;
+            this.RangeBtn.Text = "Range";
+            this.RangeBtn.UseVisualStyleBackColor = true;
+            // 
+            // statsBox
+            // 
+            this.statsBox.Location = new System.Drawing.Point(182, 365);
+            this.statsBox.Multiline = true;
+            this.statsBox.Name = "statsBox";
+            this.statsBox.Size = new System.Drawing.Size(152, 38);
+            this.statsBox.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(179, 349);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Stats Results:";
+            // 
+            // SeqSearchBtn
+            // 
+            this.SeqSearchBtn.Location = new System.Drawing.Point(201, 118);
+            this.SeqSearchBtn.Name = "SeqSearchBtn";
+            this.SeqSearchBtn.Size = new System.Drawing.Size(133, 23);
+            this.SeqSearchBtn.TabIndex = 6;
+            this.SeqSearchBtn.Text = "SEQUENTIAL SEARCH";
+            this.SeqSearchBtn.UseVisualStyleBackColor = true;
+            this.SeqSearchBtn.Click += new System.EventHandler(this.binarySearchBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 482);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.statsBox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.RangeBtn);
+            this.Controls.Add(this.AverageBtn);
+            this.Controls.Add(this.ModeBtn);
+            this.Controls.Add(this.MidExBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.SeqSearchBtn);
             this.Controls.Add(this.binarySearchBtn);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.label1);
@@ -174,6 +262,14 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel Status;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button MidExBtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button ModeBtn;
+        private System.Windows.Forms.Button AverageBtn;
+        private System.Windows.Forms.Button RangeBtn;
+        private System.Windows.Forms.TextBox statsBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button SeqSearchBtn;
     }
 }
 
