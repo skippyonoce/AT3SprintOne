@@ -167,7 +167,29 @@ namespace AT3SprintOne
             }
             catch(InvalidDataException e1) { }
         }
+        /*
+         * This function calculates and displays (in the statistics results textbox) the range of the neutrinosArray.
+         * It also displays the min and max values in the neutrinosArray. 
+         */
+        private void RangeBtn_Click(object sender, EventArgs e)
+        {
+            int lowest, highest;
+            lowest = neutrinosArray[0];
+            highest = neutrinosArray[neutrinosArray.Length - 1];
 
+            for (int i = 0; i < neutrinosArray.Length; i++)
+            {
+                if (neutrinosArray[i] < lowest) {lowest = neutrinosArray[i];}
+                if(neutrinosArray[i] > highest) { highest = neutrinosArray[i];}
+            }
+
+            //statsBox.AcceptsReturn = true;
+            string nL = Environment.NewLine;
+
+            statsBox.Text = "Range: " + (highest - lowest) +nL+
+                "Min: " + lowest +nL+
+                "Max: " + highest;
+        }
         private void SeqSearchBtn_Click(object sender, EventArgs e)
         {
             try
