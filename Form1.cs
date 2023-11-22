@@ -168,7 +168,7 @@ namespace AT3SprintOne
         }
         /*
          * This function calculates and displays (in the statistics results textbox) the range of the neutrinosArray.
-         * It also displays the min and max values in the neutrinosArray.
+         * It also displays the min and max values in the neutrinosArray. 
          */
         private void RangeBtn_Click(object sender, EventArgs e)
         {
