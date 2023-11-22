@@ -198,6 +198,7 @@
             this.statsBox.Location = new System.Drawing.Point(182, 365);
             this.statsBox.Multiline = true;
             this.statsBox.Name = "statsBox";
+            this.statsBox.ReadOnly = true;
             this.statsBox.Size = new System.Drawing.Size(152, 56);
             this.statsBox.TabIndex = 11;
             // 
