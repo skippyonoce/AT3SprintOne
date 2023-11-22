@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +32,7 @@ namespace AT3SprintOne
     public partial class Form1 : Form
     {
 
-        Random rand; //for randomly generating numbers
+        Random rand; //For randomly generating numbers
         int[] neutrinosArray = new int[24]; //For storing hourly (for 24 hours) of neutrino radiation data.
         BindingSource bs = new BindingSource(); //For GUI's viewList pre-coded functionalities.
 
@@ -107,12 +108,12 @@ namespace AT3SprintOne
                 if (idx >= 0)
                 {
                     listBox1.SetSelected(idx, true);
-                    Status.Text = "'" + search + "' was found and highlighted. [Index:"+idx+"]";
+                    Status.Text = "'" + search + "' was found and highlighted. [Index: "+idx+"]";
                 }
                 else
                 {
                     listBox1.ClearSelected();
-                    Status.Text = "'" + search + "' was not be found.";
+                    Status.Text = "'" + search + "' was not found.";
                 }
             }
             catch(InvalidDataException e1) { }
@@ -165,6 +166,41 @@ namespace AT3SprintOne
                 bs.ResetBindings(false);
             }
             catch(InvalidDataException e1) { }
+        }
+
+        private void SeqSearchBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int searchTarget = validIntInput();
+                int index;
+                bool foundTarget = false;
+                for (index = 0; (index < neutrinosArray.Length - 1) && !foundTarget;)
+                {
+                    if (searchTarget == neutrinosArray[index])
+                    {
+                        foundTarget = true;
+                    }
+                    else
+                    {
+                        index++;
+                    }
+                }
+
+                switch (foundTarget)
+                {
+                    case true:
+                        listBox1.SetSelected(index, true);
+                        Status.Text = "'" + searchTarget + "' was found and highlighted. [Index: " + index + "]";
+                        break;
+
+                    case false:
+                        listBox1.ClearSelected();
+                        Status.Text = "'" + searchTarget + "' was not found.";
+                        break;
+                }
+            }
+            catch (InvalidDataException e1) { }
         }
     }
 }
