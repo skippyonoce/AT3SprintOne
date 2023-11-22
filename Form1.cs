@@ -175,7 +175,7 @@ namespace AT3SprintOne
                 int searchTarget = validIntInput();
                 int index;
                 bool foundTarget = false;
-                for (index = 0; (index < neutrinosArray.Length - 1) && !foundTarget;)
+                for (index = 0; (index < neutrinosArray.Length) && !foundTarget;)
                 {
                     if (searchTarget == neutrinosArray[index])
                     {
