@@ -166,5 +166,25 @@ namespace AT3SprintOne
             }
             catch(InvalidDataException e1) { }
         }
+
+        private void RangeBtn_Click(object sender, EventArgs e)
+        {
+            int lowest, highest;
+            lowest = neutrinosArray[0];
+            highest = neutrinosArray[neutrinosArray.Length - 1];
+
+            for (int i = 0; i < neutrinosArray.Length; i++)
+            {
+                if (neutrinosArray[i] < lowest) {lowest = neutrinosArray[i];}
+                if(neutrinosArray[i] > highest) { highest = neutrinosArray[i];}
+            }
+
+            //statsBox.AcceptsReturn = true;
+            string nL = Environment.NewLine;
+
+            statsBox.Text = "The Range is: " + (highest - lowest) +nL+
+                "min: " + lowest +nL+
+                "max: " + highest;
+        }
     }
 }

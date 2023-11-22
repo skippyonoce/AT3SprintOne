@@ -191,13 +191,14 @@
             this.RangeBtn.TabIndex = 9;
             this.RangeBtn.Text = "Range";
             this.RangeBtn.UseVisualStyleBackColor = true;
+            this.RangeBtn.Click += new System.EventHandler(this.RangeBtn_Click);
             // 
             // statsBox
             // 
             this.statsBox.Location = new System.Drawing.Point(182, 365);
             this.statsBox.Multiline = true;
             this.statsBox.Name = "statsBox";
-            this.statsBox.Size = new System.Drawing.Size(152, 38);
+            this.statsBox.Size = new System.Drawing.Size(152, 56);
             this.statsBox.TabIndex = 11;
             // 
             // label4
@@ -217,7 +218,6 @@
             this.SeqSearchBtn.TabIndex = 6;
             this.SeqSearchBtn.Text = "SEQUENTIAL SEARCH";
             this.SeqSearchBtn.UseVisualStyleBackColor = true;
-            this.SeqSearchBtn.Click += new System.EventHandler(this.binarySearchBtn_Click);
             // 
             // Form1
             // 
