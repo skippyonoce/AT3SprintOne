@@ -185,9 +185,9 @@ namespace AT3SprintOne
             //statsBox.AcceptsReturn = true;
             string nL = Environment.NewLine;
 
-            statsBox.Text = "The Range is: " + (highest - lowest) +nL+
-                "min: " + lowest +nL+
-                "max: " + highest;
+            statsBox.Text = "Range: " + (highest - lowest) +nL+
+                "Min: " + lowest +nL+
+                "Max: " + highest;
         }
     }
 }
