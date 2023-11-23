@@ -258,5 +258,12 @@ namespace AT3SprintOne
                 statsBox.Text = $"Mode: {mode} ({elementCount[mode]} occurances)";
             }
         }
+        /*
+         * This button will calculate the average value of the data set and display the result to 2 decimal places.
+         */
+        private void AverageBtn_Click(object sender, EventArgs e)
+        {
+            statsBox.Text = $"Average: {neutrinosArray.Sum() / 24d:F2}";
+        }
     }
 }
