@@ -11,9 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// De Jean Felix and Kyle Haddleton, Team: Digi-wise, Sprint Number 1
-// Date: 13/11/2023
-// Version: 1.0
+// De Jean Felix and Kyle Haddleton, Team: Digi-wise, Sprint Number 2
+// Date: 22/11/2023
+// Version: 2.0
 // Astronomical Processing
 // This program simulates reading in neutrino radiation readings and
 // is able to sort the data set and search for specific data points.
