@@ -190,6 +190,10 @@ namespace AT3SprintOne
                 "Min: " + lowest +nL+
                 "Max: " + highest;
         }
+        /*
+         * This function does a sequential (linear) search of neutrinosArray for the value in the input text box.
+         * It will display a message appropriate for the outcome, and will select the item if it was found.
+         */
         private void SeqSearchBtn_Click(object sender, EventArgs e)
         {
             try
@@ -207,7 +211,7 @@ namespace AT3SprintOne
                     {
                         index++;
                     }
-                }//TEST COMMENT
+                }
 
                 switch (foundTarget)
                 {
@@ -223,6 +227,36 @@ namespace AT3SprintOne
                 }
             }
             catch (InvalidDataException e1) { }
+        }
+
+        /*
+         * This function will find the first mode in the array, disregarding cases in which
+         * there is no mode because all values are unique, and will ignore other modes in multi-modal data sets.
+         */
+        private void ModeBtn_Click(object sender, EventArgs e)
+        {
+            var elementCount = new Dictionary<int, int>();
+            foreach (int element in neutrinosArray)
+            {
+                if (!elementCount.ContainsKey(element))
+                {
+                    elementCount[element] = 1;
+                }
+                else 
+                { 
+                    elementCount[element]++; 
+                }
+            }
+            int maxCount = elementCount.Values.Max();
+            if (maxCount == 1)
+            {
+                statsBox.Text = "Data has no mode, all values are distinct";
+            }
+            else
+            {
+                int mode = elementCount.First(kvp => kvp.Value == maxCount).Key;
+                statsBox.Text = $"Mode: {mode} ({elementCount[mode]} occurances)";
+            }
         }
     }
 }
