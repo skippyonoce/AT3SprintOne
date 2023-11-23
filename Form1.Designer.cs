@@ -166,6 +166,7 @@
             this.MidExBtn.TabIndex = 9;
             this.MidExBtn.Text = "Mid-Extreme";
             this.MidExBtn.UseVisualStyleBackColor = true;
+            this.MidExBtn.Click += new System.EventHandler(this.MidExBtn_Click);
             // 
             // label3
             // 
