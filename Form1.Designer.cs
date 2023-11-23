@@ -55,7 +55,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(16, 65);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(168, 452);
             this.listBox1.TabIndex = 2;
@@ -64,7 +64,7 @@
             // sortBtn
             // 
             this.sortBtn.Location = new System.Drawing.Point(16, 15);
-            this.sortBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sortBtn.Margin = new System.Windows.Forms.Padding(4);
             this.sortBtn.Name = "sortBtn";
             this.sortBtn.Size = new System.Drawing.Size(169, 31);
             this.sortBtn.TabIndex = 3;
@@ -75,7 +75,7 @@
             // generateBtn
             // 
             this.generateBtn.Location = new System.Drawing.Point(16, 526);
-            this.generateBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.generateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.generateBtn.Name = "generateBtn";
             this.generateBtn.Size = new System.Drawing.Size(169, 37);
             this.generateBtn.TabIndex = 4;
@@ -86,7 +86,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(243, 86);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(231, 22);
             this.textBox1.TabIndex = 5;
@@ -103,7 +103,7 @@
             // editBtn
             // 
             this.editBtn.Location = new System.Drawing.Point(413, 50);
-            this.editBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editBtn.Margin = new System.Windows.Forms.Padding(4);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(61, 28);
             this.editBtn.TabIndex = 6;
@@ -114,7 +114,7 @@
             // binarySearchBtn
             // 
             this.binarySearchBtn.Location = new System.Drawing.Point(268, 114);
-            this.binarySearchBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.binarySearchBtn.Margin = new System.Windows.Forms.Padding(4);
             this.binarySearchBtn.Name = "binarySearchBtn";
             this.binarySearchBtn.Size = new System.Drawing.Size(177, 28);
             this.binarySearchBtn.TabIndex = 6;
@@ -160,7 +160,7 @@
             // MidExBtn
             // 
             this.MidExBtn.Location = new System.Drawing.Point(243, 314);
-            this.MidExBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MidExBtn.Margin = new System.Windows.Forms.Padding(4);
             this.MidExBtn.Name = "MidExBtn";
             this.MidExBtn.Size = new System.Drawing.Size(100, 28);
             this.MidExBtn.TabIndex = 9;
@@ -180,7 +180,7 @@
             // ModeBtn
             // 
             this.ModeBtn.Location = new System.Drawing.Point(243, 340);
-            this.ModeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ModeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ModeBtn.Name = "ModeBtn";
             this.ModeBtn.Size = new System.Drawing.Size(100, 28);
             this.ModeBtn.TabIndex = 9;
@@ -191,17 +191,18 @@
             // AverageBtn
             // 
             this.AverageBtn.Location = new System.Drawing.Point(243, 364);
-            this.AverageBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AverageBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AverageBtn.Name = "AverageBtn";
             this.AverageBtn.Size = new System.Drawing.Size(100, 28);
             this.AverageBtn.TabIndex = 9;
             this.AverageBtn.Text = "Average";
             this.AverageBtn.UseVisualStyleBackColor = true;
+            this.AverageBtn.Click += new System.EventHandler(this.AverageBtn_Click);
             // 
             // RangeBtn
             // 
             this.RangeBtn.Location = new System.Drawing.Point(243, 389);
-            this.RangeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RangeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RangeBtn.Name = "RangeBtn";
             this.RangeBtn.Size = new System.Drawing.Size(100, 28);
             this.RangeBtn.TabIndex = 9;
@@ -212,7 +213,7 @@
             // statsBox
             // 
             this.statsBox.Location = new System.Drawing.Point(243, 449);
-            this.statsBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.statsBox.Margin = new System.Windows.Forms.Padding(4);
             this.statsBox.Multiline = true;
             this.statsBox.Name = "statsBox";
             this.statsBox.ReadOnly = true;
@@ -232,7 +233,7 @@
             // SeqSearchBtn
             // 
             this.SeqSearchBtn.Location = new System.Drawing.Point(268, 145);
-            this.SeqSearchBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SeqSearchBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SeqSearchBtn.Name = "SeqSearchBtn";
             this.SeqSearchBtn.Size = new System.Drawing.Size(177, 28);
             this.SeqSearchBtn.TabIndex = 6;
@@ -262,7 +263,7 @@
             this.Controls.Add(this.generateBtn);
             this.Controls.Add(this.sortBtn);
             this.Controls.Add(this.listBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Astronomical Processing";
             this.statusStrip1.ResumeLayout(false);
