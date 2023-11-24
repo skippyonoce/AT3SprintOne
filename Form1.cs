@@ -21,9 +21,11 @@ using System.Windows.Forms;
 //Inputs for this program are click-based, and typed into a GUI.
 
 //Processes are as described above. To be more specific:
-//The search function for this program is using a Binary Search algorithm.
+//The search functions for this program are using a Binary OR
+//Sequential Search algorithms (depending on button pressed).
 //The sorting function is using a Bubble Sort algorithm.
 //The data generation function uses an iterative algorithm.
+//The program performs various statistical calculations (Mid-Extreme, Mode, Average, Range)
 
 //All relavent outputs are displayed on the programs GUI.
 
