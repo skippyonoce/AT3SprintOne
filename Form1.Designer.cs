@@ -167,6 +167,7 @@
             this.MidExBtn.Text = "Mid-Extreme";
             this.toolTip1.SetToolTip(this.MidExBtn, "Click to calculate the Mid-Extreme of the data list.");
             this.MidExBtn.UseVisualStyleBackColor = true;
+            this.MidExBtn.Click += new System.EventHandler(this.MidExBtn_Click);
             // 
             // label3
             // 

@@ -265,5 +265,12 @@ namespace AT3SprintOne
         {
             statsBox.Text = $"Average: {neutrinosArray.Sum() / 24d:F2}";
         }
+        /*
+         * This button calculate the mid-extreme (mid-range) of the data set and displays it to 2 decimal places.
+         */
+        private void MidExBtn_Click(object sender, EventArgs e)
+        {
+            statsBox.Text = $"Mid-Extreme: {(neutrinosArray.Max() + neutrinosArray.Min())/2d:F2}";
+        }
     }
 }
